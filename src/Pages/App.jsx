@@ -50,12 +50,12 @@ function App() {
           </div>
         </div>
         <div className="Secound-Section PaddingFullApp  ">
-          <div className="Box-img"  data-aos="fade-left">
+          <div className="Box-img"  data-aos="fade-left" data-aos-duration="1000">
             <div className="Box-Img-1">
               <img className='img-fluid' src={img4} alt="" />
             </div>
           </div>
-          <div className="Box-Txt"data-aos="fade-down-right" >
+          <div className="Box-Txt"data-aos="fade-down-right"data-aos-duration="1000" >
 
             <h4>ماذا عنا</h4>
             <h2>اهلا بكم في مركز <span >خيركم</span> لتحفيظ القران الكريم</h2>
@@ -89,7 +89,9 @@ function App() {
           </div>
           <div className="Content">
             <div className="Cards">
-              <div className="Box-Card-1 "data-aos="flip-left" >
+              <div className="Box-Card-1 "data-aos="flip-left"data-aos-duration="1000"
+                
+                >
                 <div className="Card-1"                          >
                   <img src={Ser1} alt="" />
                   <h2>تحفيظ القرآن الكريم</h2>
@@ -102,7 +104,7 @@ function App() {
                 </div>
               </div>
               <div className="Box-Card-1">
-                <div className="Card-1" data-aos="flip-up">
+                <div className="Card-1" data-aos="flip-up" data-aos-duration="1000">
                   <img src={Ser3} alt="" />
                   <h2 >علم النحو والصرف</h2>
                   <p>تُعنى بتعليم النحو والصرف لفهم بنية الجمل والكلمات في القرآن</p>
