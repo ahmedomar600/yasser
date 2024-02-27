@@ -1,0 +1,1160 @@
+body {
+  font-family: Cinzel Decorative;
+}
+
+body {
+  direction: rtl;
+}
+
+button:hover {
+  scale: 1.4;
+  transition: 0.3s;
+}
+
+.Blog-Margin {
+  margin-top: 74px !important;
+}
+
+.Pop-up-F {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 10px;
+  border: 3px solid #DB9E30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+  right: 21px;
+
+  & i {
+    cursor: pointer;
+    font-size: 38px;
+    color: green;
+  }
+}
+
+.Pop-up-C {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  bottom: 10px;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+  right: 76px;
+
+  & i {
+    cursor: pointer;
+    font-size: 42px;
+    color: blue;
+  }
+}
+
+/*
+Cinzel Decorative
+Noto Nastaliq Urdu
+Reem Kufi
+*/
+
+.App {
+  font-family: Noto Nastaliq Urdu;
+
+}
+
+.PaddingFullApp {
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+
+
+.Header {
+  font-family: El Messiri;
+  background-color: white;
+  box-shadow: 8px 13px 8px 0 rgba(0, 12, 55, .1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  .Box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Box-Img {
+      width: 25%;
+
+      & img {
+        width: 25%;
+      }
+    }
+
+    .Center-Txt {
+      display: flex;
+      width: 53%;
+
+      & ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0 48px;
+
+        & li {
+
+          & a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+          }
+
+          & a:hover {
+            color: #DB9E30;
+            border-bottom: 1px solid #DB9E30;
+          }
+
+          .active {
+            color: #DB9E30;
+            border-bottom: 1px solid #DB9E30;
+
+          }
+        }
+      }
+    }
+
+    .Box-Icon {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 20px;
+      gap: 17px;
+
+      .menu {
+        display: none;
+
+      }
+
+      & i {
+        color: green;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .Header {
+    .Box {
+      padding: 7px 0;
+
+      .Box-Img {
+        width: 42%;
+      }
+
+      .Center-Txt {
+        display: none;
+      }
+
+      .Box-Icon {
+        .menu {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .Header {
+    .Box {
+      padding: 20px 0;
+    }
+  }
+}
+
+.Menu-Res {
+  background-image: url("./Assist/bg.da5f502892f862ed1de2.png") !important;
+  background: white;
+  width: 0;
+  height: 67px;
+  position: fixed;
+  transition: 0.2s;
+  bottom: 0;
+  list-style: none;
+
+  .Content {
+    display: none;
+  }
+
+  .Box-txt {
+    display: none;
+  }
+}
+
+
+.open {
+  font-family: El Messiri;
+  width: 40%;
+  height: 100vh;
+  z-index: 1000000;
+  border-radius: 0px 0px 0px 68px;
+  border-left: 1px solid #DB9E30;
+
+  .Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    & h1 {
+      color: #DB9E30;
+    }
+
+    & i {
+      font-size: 34px;
+      color: #DB9E30;
+      cursor: pointer;
+    }
+  }
+
+  .Box-txt {
+    display: block;
+
+    & ul {
+      display: flex;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      height: calc(100vh - 90px);
+      justify-content: center;
+
+      & li {
+        list-style: none;
+        padding: 20px;
+        font-size: 25px;
+        transition: 0.3s;
+
+        & a {
+          text-decoration: none;
+          font-size: 25px;
+          color: black;
+        }
+      }
+
+      & li:hover {
+        scale: 1.4;
+      }
+
+      & a:hover {
+        color: #DB9E30;
+
+        border-bottom: 1px solid #DB9E30;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .open {
+    width: 100%;
+  }
+}
+
+/*start One section*/
+
+.First-Section {
+
+  .Img-Center-Bg {
+    & span {
+      background: #F8F8F8;
+      position: absolute;
+      z-index: -1;
+      height: calc(100% - 57px);
+      width: 100%;
+      border-radius: 100px;
+      opacity: 0.6;
+    }
+  }
+
+  .Img-First-Section {
+    position: absolute;
+    z-index: -1000;
+    height: calc(100% - 57px);
+    width: 100%;
+    border-radius: 100px;
+  }
+
+  .Content {
+    height: calc(100vh - 57px);
+
+    .Txt {
+      & button {
+        background: #DB9E30;
+        margin-top: 16px;
+        color: white;
+        font-family: sans-serif;
+        padding: 11px 45px;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+
+    }
+  }
+
+  .Img-Cover {
+    width: 40%;
+    position: relative;
+    animation: translateXAnimation 1s infinite alternate;
+
+    & img {
+      border-radius: 40px;
+    }
+  }
+
+
+}
+
+@media (max-width: 820px) {
+  .First-Section {
+
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .Img-Cover {
+    width: 60%;
+  }
+}
+
+@media (max-width: 370px) {
+  .Img-Cover {
+    width: 70%;
+  }
+}
+
+/*End One section*/
+
+
+/*start Secound section*/
+.Secound-Section {
+  background-image: url("./Assist/bg.da5f502892f862ed1de2.png");
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  padding: 50px 20px;
+  overflow: hidden;
+
+
+  .Box-img {
+    width: 50%;
+    display: flex;
+
+    .Box-Img-1 {
+      width: 100%;
+
+      & img {
+        border-radius: 51px;
+      }
+    }
+  }
+
+  .Box-Txt {
+    background-image: url("./Assist/bg.da5f502892f862ed1de2.png");
+    display: flex;
+    flex-direction: column;
+    width: 53%;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 25px;
+    padding: 20px;
+
+    & span {
+      color: #DB9E30;
+      font-weight: bold;
+    }
+
+    & h4 {
+      font-size: 60px;
+      margin-bottom: 50px;
+      color: #DB9E30;
+    }
+
+    & h2 {
+      margin-bottom: 30px;
+      font-family: El Messiri;
+    }
+
+    & p {
+      color: #709495;
+      background: #F9F2DF;
+      padding: 20px;
+      border-radius: 10px;
+      width: fit-content;
+    }
+
+    .Box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -62px;
+      gap: 15px;
+
+      & button {
+        background: #DD9E30;
+        margin-top: 16px;
+        color: white;
+        padding: 11px 45px;
+        border-radius: 10px;
+        border: none;
+        transition: 0.3s;
+
+      }
+
+      .Txt {
+
+        & p {
+          color: black;
+          margin: 0;
+        }
+
+        & h4 {
+          font-size: 33px;
+          margin: 0;
+          color: black;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 720px) {
+  .Secound-Section {
+    flex-direction: column;
+
+    .Box-img {
+      width: 75%;
+      margin-bottom: 25px;
+    }
+
+    .Box-Txt {
+      width: 100%;
+
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .Secound-Section {
+    flex-direction: column;
+
+    .Box-img {
+      width: 85%;
+      margin-bottom: 25px;
+    }
+
+    .Box-Txt {
+      width: 100%;
+
+      .Box {
+        display: block;
+        text-align: center;
+
+        & button {
+          margin: 10px 0;
+          transition: 0.3s;
+
+        }
+
+      }
+    }
+  }
+}
+
+/*End Secound section*/
+.Third-Section {
+  z-index: 10;
+  background-image: url("./Assist/bg.da5f502892f862ed1de2.png");
+  padding: 20px;
+  position: relative;
+
+  & span {
+    overflow: hidden;
+    background: #F8F8F8;
+    position: absolute;
+    height: calc(100%);
+    width: 100%;
+    opacity: 0.6;
+    top: -1px;
+    left: 0px;
+    z-index: -7;
+  }
+
+  .Head-Txt {
+    padding: 35px 0;
+
+    & h5 {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      font-family: unset;
+      font-size: 28px;
+      font-weight: bold;
+      color: #DB9E30;
+    }
+
+    & h3 {
+      margin-top: 47px;
+      font-weight: bold;
+    }
+  }
+
+  .Img-Section-Third {
+    display: flex;
+    flex-direction: column;
+
+    .Container-Box {
+      display: flex;
+      justify-content: space-around;
+
+      .Box-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 74%;
+
+        .Animat-Sw1 {
+          position: relative;
+          animation: AnimateSWO 1.5s infinite alternate;
+        }
+
+        .Animat-Sw2 {
+          position: relative;
+          animation: AnimateSWT 2s infinite alternate;
+        }
+
+        .Animat-Sw3 {
+          position: relative;
+          animation: AnimateSWOE 2.5s infinite alternate;
+        }
+
+        .Animat-Sw4 {
+          position: relative;
+          animation: AnimateSWOR 3s infinite alternate;
+        }
+
+        .Animat-Sw5 {
+          position: relative;
+          animation: AnimateSWOV 2.5s infinite alternate;
+        }
+
+        & img {
+          width: 100%;
+          height: 100%;
+          border-radius: 25px;
+        }
+
+        & h4 {
+          padding: 15px 0;
+          color: #DB9E30;
+          transition: .7s;
+        }
+
+        & h4:hover {
+          scale: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.Four-Section {
+
+  font-family: El Messiri;
+
+  .Head-Txt {
+    & h5 {
+      font-family: 'NOTO NASTALIQ URDU';
+      font-weight: bold;
+      color: #DB9E30;
+    }
+
+    & h2 {
+      margin: 0;
+    }
+
+    & h3 {
+      margin: 0;
+    }
+  }
+
+  .Content {
+    padding: 35px 20px;
+
+    .Cards {
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+
+      .Box-Card-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+
+        .Card-1 {
+          width: 50%;
+          box-shadow: 8px 13px 8px 0 rgba(0, 12, 55, .1);
+          background: white;
+          box-shadow: 0 2px 8px 0 rgba(0, 12, 55, .1);
+          padding: 25px;
+          border-radius: 12px;
+
+          & img {
+            display: flex;
+            margin: auto;
+            background-color: #FAF4EB;
+            padding: 20px;
+            border-radius: 100%;
+
+          }
+
+          & h2 {
+            margin: 10px 0;
+          }
+
+          & p {
+            margin: 0;
+          }
+        }
+
+        .Card-2 {
+          width: 50%;
+          box-shadow: 8px 13px 8px 0 rgba(0, 12, 55, .1);
+          background: white;
+          box-shadow: 0 2px 8px 0 rgba(0, 12, 55, .1);
+          padding: 25px;
+          border-radius: 12px;
+
+          & img {
+            display: flex;
+            margin: auto;
+            background-color: #FAF4EB;
+            padding: 20px;
+            border-radius: 100%;
+
+          }
+
+          & h2 {
+            margin: 10px 0;
+          }
+
+          & p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 520px) {
+    .Box-Card-1 {
+      flex-direction: column;
+
+      .Card-1 {
+        text-align: center;
+        width: 100% !important;
+      }
+
+      .Card-2 {
+        text-align: center;
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+
+/* start Section Five*/
+.Five-Section {
+  font-family: El Messiri;
+  background: url(../src/Assist/Five-Section.jpg) no-repeat 50%/cover;
+
+  .Box-Txt {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+    & h2 {
+      color: white;
+    }
+
+    & h3 {
+      color: #DB9E30;
+
+    }
+
+    & p {
+      color: white;
+      text-align: center;
+    }
+
+    & button {
+      width: fit-content;
+      color: white;
+      padding: 10px 20px;
+      background: rgb(219, 158, 48);
+      border: none;
+      border-radius: 11px;
+      transition: 0.3s;
+
+    }
+  }
+
+}
+
+/* End Section Five*/
+.Six-Section {
+  font-family: El Messiri;
+
+  .Head-Txt {
+    text-align: center;
+
+    & h4 {}
+
+    & h1 {}
+  }
+
+  .Cards {
+    display: flex;
+    padding: 20px 52px;
+    gap: 20px;
+
+    .Card {
+      & a {
+        text-decoration: none;
+      }
+
+      & h3 {
+        font-size: 20px;
+        color: black;
+      }
+
+      .Box-Img {
+        width: 100%;
+        padding: 10px 0;
+
+        & img {
+          width: 100%;
+          border-radius: 25px;
+        }
+      }
+
+      .End-Txt {
+        display: flex;
+
+        & a {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          text-decoration: none;
+
+          & span {
+            width: 20px;
+            height: 2px;
+            background-color: #DB9E30;
+          }
+
+          & p {
+            margin: 0;
+            color: #DB9E30;
+          }
+        }
+
+      }
+    }
+  }
+
+  @media (max-width: 620px) {
+    .Cards {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+.Seven-Section {
+  font-family: El Messiri;
+
+  .Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .Box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      margin: auto;
+      background: #DB9E30;
+      padding: 20px;
+      border-radius: 25px;
+      gap: 25px;
+      margin: 10px 0;
+
+      .Txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h3 {
+          margin: 0;
+          color: white;
+          font-weight: bold;
+        }
+
+        & p {
+          margin: 0;
+          color: white;
+        }
+      }
+
+    }
+  }
+
+  @media (max-width: 620px) {
+    .Content {
+      display: flex;
+
+      .Box {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.Footer {
+  background: black;
+  text-align: center;
+
+  .Content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h6 {
+      margin: 0;
+      color: white;
+    }
+
+    & span {
+      color: #DB9E30;
+      font-weight: bold;
+    }
+
+    & P {
+      margin: 0;
+      color: white;
+    }
+  }
+}
+
+
+
+@keyframes translateXAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(25px);
+    /* Translate by 20 pixels along x-axis */
+  }
+}
+
+
+
+@keyframes AnimateSWO {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(20px);
+    /* Translate by 20 pixels along x-axis */
+  }
+}
+
+@keyframes AnimateSWT {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(20px);
+    /* Translate by 20 pixels along x-axis */
+  }
+}
+
+@keyframes AnimateSWOE {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(20px);
+    /* Translate by 20 pixels along x-axis */
+  }
+}
+
+@keyframes AnimateSWOR {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(20px);
+    /* Translate by 20 pixels along x-axis */
+  }
+}
+
+@keyframes AnimateSWOV {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(20px);
+    /* Translate by 20 pixels along x-axis */
+  }
+}
+
+
+
+
+.Blog {
+  height: 1500px;
+
+  & h1 {
+    font-size: 25px;
+  }
+}
+
+.Services {
+  font-family: El Messiri;
+
+  .Cards {
+    margin-top: 99px;
+    padding: 10px;
+
+    .Two-Card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 64px;
+
+      .Box-one {
+        background: white;
+        box-shadow: 8px 13px 9px 8px rgba(0, 12, 55, .1);
+        padding: 45px 20px;
+
+        & h1 {
+          text-align: center;
+          color: #DB9E30;
+          font-weight: bold;
+        }
+
+        & ul {
+          & li {
+            padding: 10px;
+
+          }
+        }
+      }
+
+      .Box-Two {
+        background: white;
+        box-shadow: 8px 13px 9px 8px rgba(0, 12, 55, .1);
+        padding: 45px 20px;
+
+        & h1 {
+          text-align: center;
+          color: #DB9E30;
+          font-weight: bold;
+        }
+
+        & ul {
+          & li {
+            padding: 10px;
+
+          }
+        }
+      }
+    }
+
+    .Card-one {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+
+      .Content {
+
+        background: white;
+        box-shadow: 8px 13px 9px 8px rgba(0, 12, 55, .1);
+        padding: 45px 20px;
+
+        & h1 {
+          text-align: center;
+          color: #DB9E30;
+          font-weight: bold;
+        }
+
+        & ul {
+          & li {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .Contact {
+    text-align: center;
+
+    & h1 {
+      color: #DB9E30;
+    }
+
+    .Icon-Serv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      padding: 20px;
+
+      & a:first-child {
+        font-size: 60px;
+        color: green;
+      }
+
+      & a:last-child {
+        font-size: 60px;
+        color: blue;
+      }
+    }
+
+    .Call-me {
+      padding: 20px;
+      & h4 {
+        color: #DB9E30;
+        font-weight: bold;
+      }
+
+      .Box-Call-1 {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+
+        & i {
+          font-size: 36px;
+          margin: 0;
+        }
+
+        & p {
+          margin: 0;
+        }
+      }
+
+      .Box-Call-2 {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+      }
+
+      & i {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      & p {
+        margin: 0;
+      }
+    }
+  }
+
+}
+@media (max-width: 620px) {
+ .Services {
+  .Cards {
+    .Two-Card {
+      flex-direction: column;
+    }
+  }
+ }
+
+}
+@media (max-width: 320px) {
+  .Services {
+   .Cards {
+    .Card-one {
+      padding: 10px 0;
+      text-align: center;
+      .Content {
+        padding: 45px 0px;
+       }
+    }
+     .Two-Card {
+       flex-direction: column;
+       .Box-one {
+        padding: 45px 0;
+        text-align: center;
+       }
+       .Box-Two {
+        padding: 45px 0;
+        text-align: center;
+       }
+     }
+  
+
+   }
+  }
+ 
+ }
+
+.About-Me {
+  font-family: El Messiri;
+  
+.Head-Txt {
+  padding: 10px 0;
+  text-align: center;
+  & h1 {
+    color: #DB9E30;
+    font-weight: bold;
+  }
+}
+}
