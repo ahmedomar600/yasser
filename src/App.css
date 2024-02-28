@@ -224,12 +224,16 @@ Reem Kufi
 
     & h1 {
       color: #DB9E30;
+          z-index: 8900;
     }
 
     & i {
       font-size: 34px;
       color: #DB9E30;
       cursor: pointer;
+      z-index: 8900;
+
+      
     }
   }
 
