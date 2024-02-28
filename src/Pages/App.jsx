@@ -17,13 +17,14 @@ import Blog1 from "../Assist/Six-Section1.jpg"
 import Blog2 from "../Assist/Sex-Section2.jpg"
 import Blog3 from "../Assist/Sex-Section3.jpg"
 
+import { useNavigate } from "react-router-dom";
 
 
 import SwiperD from "../swiper-js/Swiper"
 
 // import img5 from "../Assist/img-Section-Two1.jpg"
 function App() {
-
+const navigate = useNavigate()
   
   return (
     <>
@@ -38,7 +39,7 @@ function App() {
               <img className="m-auto d-flex" src={img3} alt="" />
               <h2 className='pt-3'>”توب إلى الله قبل أن تعود إلى الله“</h2>
               <p className='pt-3 animate__animated animate__bounce'>القلب الذي ينبض في سبيل الله هو دائما غريب بين القلوب التي تنبض في الدنيا.</p>
-              <button className=' btn'>تواصل معانا</button>
+              <button onClick={()=> {navigate("/AboutMe")}} className=' btn'>تواصل معانا</button>
             </div>
             <div className="Img-Cover  ">
               <img className="img-fluid" src={img1} alt="" />
@@ -57,7 +58,7 @@ function App() {
             <h2>اهلا بكم في مركز <span >خيركم</span> لتحفيظ القران الكريم</h2>
             <p>نحن نقدم خدمات تحفيظ القران الكريم</p>
             <div className="Box">
-              <button>اكتشف اكثر</button>
+              <button onClick={()=> {navigate("/Services")}}>اكتشف اكثر</button>
               <div className="Txt">
                 <p>تحدث معانا: 01016354102</p>
 
@@ -129,7 +130,7 @@ function App() {
             <h2>مركز خيركم</h2>
             <h3>لتحفيظ القرآن الكريم</h3>
             <p>نعمل من اجل تطوير القيم والأخلاق وتحفيظ القرآن الكريم واحكام التجويد وتعليم نور البيان والقاعدة النورانية</p>
-            <button>اعرف اكثر</button>
+            <button onClick={()=> {navigate("/AboutMe")}}>اعرف اكثر</button>
           </div>
         </div>
         <div className="Six-Section PaddingFullApp ">
