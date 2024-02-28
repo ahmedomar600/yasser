@@ -6,7 +6,7 @@ const Services = () => {
             <div className="Services Blog-Margin">
                 <div className="Cards">
                     <div className="Two-Card">
-                        <div className="Box-one">
+                        <div className="Box-one" data-aos="flip-right" data-aos-duration="1000">
                             <h1>الباقه الاولي</h1>
                             <ul>
                                 <li>تحفيظ القرآن الكريم</li>
@@ -19,7 +19,7 @@ const Services = () => {
                        
                             </ul>
                         </div>
-                        <div className="Box-Two">
+                        <div className="Box-Two" data-aos="flip-right" data-aos-duration="1000">
                             <h1>الباقه الثانيه</h1>
                             <ul>
                             <li>تحفيظ القرآن الكريم</li>
@@ -32,7 +32,7 @@ const Services = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="Card-one">
+                    <div className="Card-one" data-aos="flip-right" data-aos-duration="1000">
                         <div className="Content">
                         <h1>الباقه الثالثه</h1>
                         <ul>
