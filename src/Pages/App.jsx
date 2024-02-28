@@ -1,6 +1,4 @@
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 
 import '../App.css';
 import img1 from "../Assist/First-Section.jpg"
@@ -25,9 +23,7 @@ import SwiperD from "../swiper-js/Swiper"
 
 // import img5 from "../Assist/img-Section-Two1.jpg"
 function App() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
+
   
   return (
     <>
